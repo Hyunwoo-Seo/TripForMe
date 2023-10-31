@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>나에게 맞는 여행</title>
+
+</head>
+<body>
+    <div class = "logo">
+        <img src = "../media/logo.png">
+    </div>
+    <a class = "welcome">나에게 맞는 여행에 오신것을 환영합니다</a>
+    <br><br>
+    <div class = "buttonbox">
+        <button class = "button" id="recommendButton">추천 받기</button>
+    </div>
+    <div class = "buttonbox">
+        <button class = "button1" id="recommendButton1">다른 MBTI들은 어떨까?</button>
+    </div>
+    <script>
+        document.getElementById("recommendButton").addEventListener("click", function() {
+            window.location.href = "../html/main2.html";
+        });
+        document.getElementById("recommendButton1").addEventListener("click", function() {
+            window.location.href = "../html/mbti.html";
+        });
+    </script>
+</body>
+</html>

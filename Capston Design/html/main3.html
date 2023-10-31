@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style3.css">
+    <title>나에게 맞는 여행</title>
+</head>
+<body>
+    <div class = "logo-container">
+        <div class = "logo">
+            <img src = "../media/logo.png">
+        </div>
+    </div>
+    <div class = "place-container">
+        <a class = "place-choose">가고 싶은 지역을 골라주세요 !</a>
+    </div>
+
+    <div class = "place-check-container">
+        <form class = "place-check">
+            <div class = "design radio-container">
+                <input type = "radio" name = "place" value = "seoul">
+                <label for = "seoul"></label>
+            </div>
+            <div class = "design1 radio-container">
+                <input type = "radio" name = "place" value = "busan">
+                <label for = "busan"></label>
+            </div> 
+            <div class = "design2 radio-container">
+                <input type = "radio" name = "place" value = "jeju">
+                <label for = "jeju">제주</label>
+            </div> 
+            <div class = "design3 radio-container">
+                <input type = "radio" name = "place" value = "gyeongju">
+                <label for = "gyeongju">경주</label>
+            </div>
+        </form>
+    </div>
+    
+    <div class = "buttonbox">
+        <button class = "button" id="recommendButton">이전 으로</button>
+        <button class = "button" id="recommendButton1">다음 으로</button>
+    </div>
+
+
+        
+    <script>
+        let select = "";
+  
+        const radioButtons = document.querySelectorAll(".radio-container input");
+        radioButtons.forEach((radioButton) => {
+          console.log(radioButton);
+          radioButton.addEventListener("change", (e) => {
+            select = e.target.value;
+          });
+        });
+  
+        const urlSearch = new URLSearchParams(location.search);
+        const mbti = urlSearch.get("mbti");
+  
+        console.log(mbti);
+        document
+          .getElementById("recommendButton")
+          .addEventListener("click", function () {
+            window.location.href = "../html/main2.html";
+          });
+        document
+          .getElementById("recommendButton1")
+          .addEventListener("click", function () {
+            window.location.href = `../html/result.html?mbti=${mbti}&location=${select}`;
+          });
+      </script>
+
+
+</body>
+</html>

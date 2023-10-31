@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nowwhere.css">
+</head>
+<body>
+    <div class = "header">
+        <p>지금 갈만한 곳은?</p>
+    </div>
+
+    <div class = "back-button" id = "back">
+        <img src = "../media/btn_back.png">
+    </div>
+
+    <div class = "relative">
+        <div class = "bigdata">
+            <div class = "container" id = "seomyeonlight">
+                <div class = "button" id ="seomyeonlightfesta">서면 빛 축제</div>
+            </div>
+            <div class = "container" id = "luminarie">
+                <div class = "button" id ="luminariefesta">루미나리에</div>
+            </div>
+            <div class = "container" id = "ktandg">
+                <div class = "button" id ="ktandgfesta">시옷 2023</div>
+            </div>
+            <div class = "container" id = "changdukgoong">
+                <div class = "button" id ="changdukgoongfesta">창덕궁 달빛기행</div>
+            </div>
+            <div class = "container" id = "hwadammaple">
+                <div class = "button" id ="hwadammaplefesta">화담숲 가을 단풍축제</div>
+            </div>
+            <div class = "container" id = "hueri">
+                <div class = "button" id ="huerifesta">휴애리 핑크뮬리축제</div>
+            </div>
+            <div class = "container" id = "gujeislandflower">
+                <div class = "button" id ="gujeislandflowerfesta">거제 섬꽃 축제</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("seomyeonlight").addEventListener("click", function() {
+            window.location.href = "https://www.busanjin.go.kr/board/view.busanjin?boardId=BBS_0000009&menuCd=DOM_000000110001001000&paging=ok&startPage=2&dataSid=3875702";
+        });
+        document.getElementById("luminarie").addEventListener("click", function() {
+            window.location.href = "https://www.songpa.go.kr/culture/detailInfo.do?key=3796&resrceCd=CT0155-1030773&";
+        });
+        document.getElementById("ktandg").addEventListener("click", function() {
+            window.location.href = "https://www.sangsangmadang.com/customer/notice/detail/5503";
+        });
+        document.getElementById("changdukgoong").addEventListener("click", function() {
+            window.location.href = "https://www.chf.or.kr/chf";
+        });
+        document.getElementById("hwadammaple").addEventListener("click", function() {
+            window.location.href = "https://www.hwadamsup.com/renewal/pc/ko/index.do";
+        });
+        document.getElementById("hueri").addEventListener("click", function() {
+            window.location.href = "http://hueree.com/index.php";
+        });
+        document.getElementById("gujeislandflower").addEventListener("click", function() {
+            window.location.href = "https://www.geoje.go.kr/flower/index.geoje";
+        });
+        document.getElementById("back").addEventListener("click", function() {
+        window.location.href = "../html/mbti.html";
+    });
+    </script>
+</body>
+</html>

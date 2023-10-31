@@ -1,0 +1,100 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.bigdata {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 4px black solid;
+    border-radius: 70px;
+    margin: 0 40px;
+}
+
+#flex {
+    background-image: url("../media/flex.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wherelike {
+    background-image: url("../media/wherelike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#whatfoodlike {
+    background-image: url("../media/whatfood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nowwherego {
+    background-image: url("../media/nowwhere.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    background-color: #BEFFA7;
+    color: black;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 4px black solid;
+    border-radius: 60px;
+    margin: 0 0 40px 0;
+}
+
+.button:hover {
+    color:fuchsia;
+}
+
+.back-button {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}

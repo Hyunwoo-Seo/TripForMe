@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>나에게 맞는 여행</title>
+</head>
+<body>
+    <div class = "logo-container">
+        <div class = "logo">
+            <img src = "../media/logo.png">
+        </div>
+    </div>
+    <div class = "mbti-container">
+        <a class = "mbti-choose">자신의 MBTI를 골라주세요 !</a>
+    </div>
+    
+    <div class = "mbit-check-container">
+        <form class = "mbti-check">
+            <div class = "design">
+                <input type = "radio" name = "mbti" value = "ENFJ"><label for = "ENFJ">ENFJ</label>
+            </div>
+            <div class = "design">
+                <input type = "radio" name = "mbti" value = "ENFP"><label for = "ENFP">ENFP</label>
+            </div> 
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ENTJ">ENTJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ENTP">ENTP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ESFJ">ESFJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ESFP">ESFP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ESTJ">ESTJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ESTP">ESTP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "INFJ">INFJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "INFP">INFP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "INTJ">INTJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "INTP">INTP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ISFJ">ISFJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ISFP">ISFP</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ISTJ">ISTJ</label>
+            </div>  
+            <div class = "design">
+                <label><input type = "radio" name = "mbti" value = "ISTP">ISTP</label>
+            </div>
+        </form>
+    </div>
+
+    <div class = "buttonbox">
+        <button class = "button" id="recommendButton">이전 으로</button>
+        <button class = "button" id="recommendButton1">다음 으로</button>
+    </div>
+
+        
+    <script>
+        let select = "";
+  
+        const radioButtons = document.querySelectorAll(".design input");
+        radioButtons.forEach((radioButton) => {
+          console.log(radioButton);
+          radioButton.addEventListener("change", (e) => {
+            select = e.target.value;
+          });
+        });
+  
+        document
+          .getElementById("recommendButton")
+          .addEventListener("click", function () {
+            window.location.href = "../html/main1.html";
+          });
+        document
+          .getElementById("recommendButton1")
+          .addEventListener("click", function () {
+            window.location.href = "../html/main3.html?mbti=" + select;
+          });
+      </script>
+
+
+</body>
+</html>

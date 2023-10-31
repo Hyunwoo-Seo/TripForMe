@@ -1,0 +1,97 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* 로고를 왼쪽으로 정렬 */
+    align-items: center; /* 로고를 수직으로 가운데 정렬 */
+    position: absolute;
+    top: 25%;
+}
+
+.mbti-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.mbti-choose {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mbit-check-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 730px;
+    margin-top: 50px;
+    width: 750px;
+    height: 500px;
+}
+
+
+.design {
+    display: flex;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 20px;
+    width: 150px;
+    height: 100px;
+    background-color: #FFE1E6;
+    color: black;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.buttonbox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: #FFE1E6;
+    color: black;
+    margin-right: 40px;
+}
+
+.button:hover {
+    color: white;
+}
+
+input {
+    cursor: pointer;
+}

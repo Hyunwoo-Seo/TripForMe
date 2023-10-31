@@ -1,0 +1,123 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.curation {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 21vw;
+}
+
+#backbtn {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+#homebtn {
+    margin: 0 0 0 40px;
+    width: 50px;
+    height: 50px;
+}
+
+#sharebtn {
+    width: 50px;
+    height: 50px;
+
+}
+
+.menubar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px black solid;
+    width: 21vw;
+    height: 6vw;
+}
+
+.menubar p {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 30px;
+    margin: 0 0 0 30px;
+}
+
+/* 탭메뉴 */
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    list-style: none; /* 기본 목록 마커 제거 */
+    padding: 0; /* 내부 간격 제거 */
+    box-sizing: border-box;
+  }
+
+.tab a {
+    text-decoration: none;
+    color: black;
+}
+
+.tab li {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 25px;
+    border: 1px black solid;
+    flex: 33%;
+    padding: 10px 0 10px 0;
+}
+
+.content {
+    overflow: scroll;
+    max-height: 800px;
+    overflow-x: hidden;
+}
+
+.finalsum {
+    border: 1px black solid;
+    border-bottom: 0.5px black solid;
+    display: flex;
+    flex-direction: row;
+}
+
+.finalsum img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.name {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adress {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 15px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#map {
+    margin: 0px;
+    padding: 0px;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}

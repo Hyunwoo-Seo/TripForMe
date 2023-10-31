@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/mbti.css">
+</head>
+<body>
+    <div class = "logo">
+        <img src = "../media/logo2.png">
+    </div>
+        <div class = "back-button" id = "back">
+            <img src = "../media/btn_back.png">
+        </div>
+
+    <div class = "bigdata">
+        <div class = "container" id = "flex">
+            <div class = "button" id ="howbuy">어떻게 소비를 할까?</div>
+        </div>
+        <div class = "container" id = "wherelike">
+            <div class = "button" id ="whereplace">어디를 좋아할까?</div>
+        </div>
+        <div class = "container" id = "whatfoodlike">
+            <div class = "button" id ="whatfood">어떤 음식을 좋아할까?</div>
+        </div>
+        <div class = "container" id = "nowwherego">
+            <div class = "button" id ="nowwhere">지금 갈만한 곳은?</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("howbuy").addEventListener("click", function() {
+        window.location.href = "../html/howbuy.html";
+    });
+    document.getElementById("whereplace").addEventListener("click", function() {
+        window.location.href = "../html/whereplace.html";
+    });
+    document.getElementById("whatfood").addEventListener("click", function() {
+        window.location.href = "../html/whatfood.html";
+    });
+    document.getElementById("nowwhere").addEventListener("click", function() {
+        window.location.href = "../html/nowwhere.html";
+    });
+    document.getElementById("back").addEventListener("click", function() {
+        window.location.href = "../html/main1.html";
+    });
+    </script>
+</body>
+</html>

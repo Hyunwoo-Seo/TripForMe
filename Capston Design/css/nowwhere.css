@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+  
+
+body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 70px;
+}
+
+.relative {
+    position: relative;
+    height: 600px;
+    overflow: auto;
+}
+
+.bigdata {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border: 4px black solid;
+    border-radius: 70px;
+  }
+
+#flex {
+    background-image: url("../media/flex.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#wherelike {
+    background-image: url("../media/wherelike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#whatfoodlike {
+    background-image: url("../media/whatfood.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#nowwherego {
+    background-image: url("../media/nowwhere.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ENFP {
+    background-image: url("../media/ENFP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ENFJ {
+    background-image: url("../media/ENFJ.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ENTP {
+    background-image: url("../media/ENTP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ENTJ {
+    background-image: url("../media/ENTJ.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ESFP {
+    background-image: url("../media/ESFP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ESFJ {
+    background-image: url("../media/ESFJ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ESTP {
+    background-image: url("../media/ESTP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ESTJ {
+    background-image: url("../media/ESTJ.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#INFP {
+    background-image: url("../media/INFP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#INFJ {
+    background-image: url("../media/INFJ.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#INTP {
+    background-image: url("../media/INTP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#INTJ {
+    background-image: url("../media/INTJ.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ISFP {
+    background-image: url("../media/ISFP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ISFJ {
+    background-image: url("../media/ISFJ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ISTP {
+    background-image: url("../media/ISTP.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#ISTJ {
+    background-image: url("../media/ISTJ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    background-color: #BEFFA7;
+    color: black;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 4px black solid;
+    border-radius: 60px;
+    margin: 0 0 40px 0;
+}
+
+.button:hover {
+    color:fuchsia;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#seomyeonlight {
+    background-image: url('../media/seomyeonlightfest.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#luminarie {
+    background-image: url('../media/ruminariefesta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#ktandg {
+    background-image: url('../media/kt&gfesta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#changdukgoong {
+    background-image: url('../media/changdukgoogfesta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hwadammaple {
+    background-image: url('../media/maplefesta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hueri {
+    background-image: url('../media/pinkmullifesta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gujeislandflower {
+    background-image: url('../media/gujedoislandflower.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back-button {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}

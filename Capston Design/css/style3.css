@@ -1,0 +1,160 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* 로고를 왼쪽으로 정렬 */
+    align-items: center; /* 로고를 수직으로 가운데 정렬 */
+    position: absolute;
+    top: 25%;
+}
+
+.place-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.place-choose {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-right: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.place-check-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 730px;
+    margin-top: 50px;
+    width: 750px;
+    height: 500px;
+}
+
+
+.design {
+    display: flex;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 100px;
+    width: 300px;
+    height: 400px;
+    background-image: url("../media/seoul.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blue;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.design1 {
+    display: flex;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 100px;
+    width: 300px;
+    height: 400px;
+    background-image: url("../media/busan.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blue;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.design2 {
+    display: flex;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 100px;
+    width: 300px;
+    height: 400px;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blue;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.design3 {
+    display: flex;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 100px;
+    width: 300px;
+    height: 400px;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blue;
+    border: 1px white solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.buttonbox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 40px;
+    margin-right: 500px;
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: #FFE1E6;
+    color: blacke;
+    margin-right: 40px;
+}
+
+.button:hover {
+    color: white;
+}
+
+input {
+    cursor: pointer;
+}
