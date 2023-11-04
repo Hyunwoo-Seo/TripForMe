@@ -2864,11 +2864,21 @@ function shuffle(array) {
 
 
       if (local === "seoul") {
-        shuffle(SeoulDataList);
+        shuffle(SeoulDinning);
+        shuffle(SeoulActivity);
+        shuffle(SeoulCafe);
         return SeoulDataList;
       }
       if (local === "busan") {
         shuffle(BusanDinning);
+        shuffle(BusanActivity);
+        shuffle(BusanCafe);
+        return BusanDinning;
+      }
+      if (local === "jeju") {
+        shuffle(JejuDinning);
+        shuffle(JejuActivity);
+        shuffle(JejuCafe);
         return BusanDinning;
       }
       return [];
