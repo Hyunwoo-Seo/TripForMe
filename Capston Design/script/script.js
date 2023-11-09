@@ -23,10 +23,10 @@ function shuffle(array) {
     const urlSearch = new URLSearchParams(location.search);
     const mbti = urlSearch.get("mbti");
     const local = urlSearch.get("location");
-  
+
     console.log(mbti, local);
   
-    function getDataList(local) {
+    function DinningDataList(local) {
       const BusanDinning = [
         {
           name: "새살맛집 곤드레밥",
@@ -379,370 +379,6 @@ function shuffle(array) {
           lng: 129.12469,
         }
       ];
-
-      const BusanCafe = [
-        {
-          name: "고유한",
-          address: "부산광역시 수영구 남천동로108번길 38 골든비치 9",
-          imageUrl: "../media/고유한.jpg",
-          lat: 35.146486,
-          lng: 129.113234,
-        },
-        {
-          name: "다기",
-          address: "부산광역시 수영구 남천동 광안해변로 122",
-          imageUrl: "../media/다기.jpg",
-          lat: 35.145745,
-          lng: 129.115102,
-        },
-        {
-          name: "프라한",
-          address: "부산광역시 수영구 남천동 남천동로108번길 52",
-          imageUrl: "../media/프라한.jpg",
-          lat: 35.145936,
-          lng: 129.114154,
-        },
-        {
-          name: "카페 피크닉",
-          address: "부산광역시 수영구 수영로510번길 40 1 층",
-          imageUrl: "../media/카페 피크닉.jpg",
-          lat: 35.150759,
-          lng: 129.113623,
-        },
-        {
-          name: "아일드블루",
-          address: "부산광역시 수영구 남천동 5-13",
-          imageUrl: "../media/아일드블루.jpg",
-          lat: 35.146085,
-          lng: 129.114482,
-        },
-        {
-          name: "카페 오뜨",
-          address: "부산광역시 수영구 광안해변로 209",
-          imageUrl: "../media/카페 오뜨.jpg",
-          lat: 35.152753,
-          lng: 129.117612,
-        },
-        {
-          name: "일리카페",
-          address: "부산광역시 수영구 광안해변로 189",
-          imageUrl: "../media/일리카페.jpg",
-          lat: 35.151404,
-          lng: 129.116595,
-        },
-        {
-          name: "샌디스",
-          address: "부산광역시 남천바다로 38-1",
-          imageUrl: "../media/샌디스.jpg",
-          lat: 35.148183,
-          lng: 129.114282,
-        },
-        {
-          name: "컵앤컵커피",
-          address: "부산광역시 수영구 광안해변로 177",
-          imageUrl: "../media/컵앤컵커피.jpg",
-          lat: 35.150454,
-          lng: 129.115834,
-        },
-        {
-          name: "브알라 카페",
-          address: "부산광역시 수영구 광안해변로 165",
-          imageUrl: "../media/브알라 카페.jpg",
-          lat: 35.149586,
-          lng: 129.115116,
-        },
-        {
-          name: "Cafe prep",
-          address: "부산광역시 수영구 광안제2동 수영로528번길 38",
-          imageUrl: "../media/Cafe prep.jpg",
-          lat: 35.152172,
-          lng: 129.114903,
-        },
-        {
-          name: "뚜버기 카페",
-          address: "부산광역시 수영구 광안해변로 239",
-          imageUrl: "../media/뚜버기 카페.jpg",
-          lat: 35.154771,
-          lng: 129.120148,
-        },
-        {
-          name: "커피 광안184",
-          address: "부산광역시 수영구 광남로83번길 4",
-          imageUrl: "../media/커피 광안184.jpg",
-          lat: 35.149775,
-          lng: 129.113998,
-        },
-        {
-          name: "워크스루",
-          address: "부산광역시 수영구 수영로522번길 39",
-          imageUrl: "../media/워크스루.jpg",
-          lat: 35.151961,
-          lng: 129.113851,
-        },
-        {
-          name: "별침대",
-          address: "부산광역시 수영구 광안해변로 203",
-          imageUrl: "../media/별침대.jpg",
-          lat: 35.152503,
-          lng: 129.117408,
-        },
-        {
-          name: "아스트릭커피",
-          address: "부산광역시 수영구 광안해변로 179",
-          imageUrl: "../media/아스트릭커피.jpg",
-          lat: 35.150587,
-          lng: 129.115885,
-        },
-        {
-          name: "아덴블랑제리",
-          address: "부산광역시 수영구 광안해변로 161",
-          imageUrl: "../media/아덴블랑제리.jpg",
-          lat: 35.149238,
-          lng: 129.11476,
-        },
-        {
-          name: "카페보배",
-          address: "부산광역시 수영구 민락동 163-26번지",
-          imageUrl: "../media/카페보배.jpg",
-          lat: 35.158407,
-          lng: 129.123133,
-        },
-        {
-          name: "스칸센",
-          address: "부산광역시 수영구 남천동 5-22번지",
-          imageUrl: "../media/스칸센.jpg",
-          lat: 35.146508,
-          lng: 129.113081,
-        },
-        {
-          name: "클러터",
-          address: "부산광역시 수영구 광안로49번길 11",
-          imageUrl: "../media/클러터.jpg",
-          lat: 35.155727,
-          lng: 129.117789,
-        },
-        {
-          name: "Unbent coffee",
-          address: "부산광역시 수영구 민락동 165-20",
-          imageUrl: "../media/Unbent coffee.jpg",
-          lat: 35.157827,
-          lng: 129.120569,
-        },
-        {
-          name: "카페 부아장",
-          address: "부산광역시 수영구 민락본동로27번길 30",
-          imageUrl: "../media/카페 부아장.jpg",
-          lat: 35.158791,
-          lng: 129.127035,
-        },
-        {
-          name: "헤이플롯",
-          address: "부산광역시 수영구 광남로258번길 8",
-          imageUrl: "../media/헤이플롯.jpg",
-          lat: 35.159246,
-          lng: 129.127058,
-        },
-        {
-          name: "카페보배",
-          address: "부산광역시 수영구 민락동 163-26번지",
-          imageUrl: "../media/카페보배.jpg",
-          lat: 35.158405,
-          lng: 129.123132,
-        },
-        {
-          name: "트위스티 베어",
-          address: "부산 수영구 수영로618번길 32-7",
-          imageUrl: "../media/트위스티 베어.jpg",
-          lat: 35.160207,
-          lng: 129.115617,
-        },
-        {
-          name: "차선책",
-          address: "부산광역시 수영구 민락동 광안해변로 237",
-          imageUrl: "../media/차선책.jpg",
-          lat: 35.154714,
-          lng: 129.119959,
-        },
-        {
-          name: "포레스트원_그린",
-          address: "부산광역시 수영구 광안해변로 237",
-          imageUrl: "../media/포레스트원_그린.jpg",
-          lat: 35.154668,
-          lng: 129.119905,
-        },
-        {
-          name: "E-coffee",
-          address: "부산광역시 수영구 민락수변로 141",
-          imageUrl: "../media/E-coffee.jpg",
-          lat: 35.156423,
-          lng: 129.134661,
-        },
-        {
-          name: "더브릿지",
-          address: "부산광역시 해운대구 해운대해변로209번가길 29-1",
-          imageUrl: "../media/더브릿지.jpg",
-          lat: 35.159477,
-          lng: 129.157173,
-        },
-        {
-          name: "오설록",
-          address: "부산광역시 해운대구 우동 1352 1",
-          imageUrl: "../media/오설록.jpg",
-          lat: 35.160913,
-          lng: 129.160873,
-        }
-      ]
-
-      const BusanActivity = [
-        {
-          name: "오륙도 스카이워크",
-          address: "부산광역시 남구 오륙도로 137",
-          imageUrl: "../media/오륙도 스카이워크.jpg",
-          lat: 35.10067,
-          lng: 129.124408,
-        },
-        {
-          name: "남천해변공원",
-          address: "부산 수영구 남천2동 148-100",
-          imageUrl: "../media/남천해변공원.jpg",
-          lat: 35.146566,
-          lng: 129.114793,
-        },
-        {
-          name: "APEC나루공원",
-          address: "부산광역시 해운대구 수영강변대로 93",
-          imageUrl: "../media/APEC나루공원.jpg",
-          lat: 35.170646,
-          lng: 129.125442,
-        },
-        {
-          name: "민락수변공원",
-          address: "부산광역시 수영구 광안해변로 361",
-          imageUrl: "../media/민락수변공원.jpg",
-          lat: 35.146195,
-          lng: 129.116304,
-        },
-        {
-          name: "유엔 조각공원",
-          address: "부산광역시 남구 대연제4동 779-1",
-          imageUrl: "../media/유엔 조각공원.jpg",
-          lat: 35.129669,
-          lng: 129.097457,
-        },
-        {
-          name: "대연수목전시원",
-          address: "부산광역시 남구 대연동 713",
-          imageUrl: "../media/대연수목전시원.jpg",
-          lat: 35.125501,
-          lng: 129.09894,
-        },
-        {
-          name: "미포철길",
-          address: "부산광역시 해운대구 중제1동 달맞이길50번길 20",
-          imageUrl: "../media/미포철길.jpg",
-          lat: 35.16002,
-          lng: 129.170831,
-        },
-        {
-          name: "청사포 다릿돌전망대",
-          address: "부산광역시 해운대구 중동 산3-9",
-          imageUrl: "../media/청사포 다릿돌전망대.jpg",
-          lat: 35.164106,
-          lng: 129.19678,
-        },
-        {
-          name: "장산산림욕장",
-          address: "부산광역시 해운대구 좌동 1381",
-          imageUrl: "../media/장산산림욕장.jpg",
-          lat: 35.185135,
-          lng: 129.165142,
-        },
-        {
-          name: "삼주다이아몬드베이",
-          address: "부산광역시 남구 용호동 분포로 101",
-          imageUrl: "../media/삼주다이아몬드베이.jpg",
-          lat: 35.132969,
-          lng: 129.1161,
-        },
-        {
-          name: "동백섬 해안산책로",
-          address: "부산광역시 해운대구 우제1동 707",
-          imageUrl: "../media/동백섬 해안산책로.jpg",
-          lat: 35.153485,
-          lng: 129.153601,
-        },
-        {
-          name: "달맞이언덕",
-          address: "부산광역시 해운대구 중제1동",
-          imageUrl: "../media/달맞이언덕.jpg",
-          lat: 35.155716,
-          lng: 129.178294,
-        },
-        {
-          name: "문탠로드",
-          address: "부산광역시 해운대구 중제2동 달맞이길",
-          imageUrl: "../media/문탠로드.jpg",
-          lat: 35.156372,
-          lng: 129.18028,
-        },
-        {
-          name: "부산 엑스 더 스카이",
-          address: "부산광역시 해운대구 달맞이길 30",
-          imageUrl: "../media/부산 엑스 더 스카이.jpg",
-          lat: 35.159844,
-          lng: 129.169804,
-        },
-        {
-          name: "달맞이동산",
-          address: "부산광역시 해운대구 중동",
-          imageUrl: "../media/달맞이동산.jpg",
-          lat: 35.156974,
-          lng: 129.182217,
-        },
-        {
-          name: "해운대해수욕장",
-          address: "부산광역시 해운대구 중동 1415-27",
-          imageUrl: "../media/해운대해수욕장.jpg",
-          lat: 35.159021,
-          lng: 129.16035,
-        },
-        {
-          name: "F1963",
-          address: "부산광역시 수영구 구락로123번길 20",
-          imageUrl: "../media/F1963.jpg",
-          lat: 35.176698,
-          lng: 129.115319,
-        },
-        {
-          name: "수영팔도시장",
-          address: "부산광역시 수영구 수영로705번길 36",
-          imageUrl: "../media/수영팔도시장.jpg",
-          lat: 35.16878,
-          lng: 129.116916,
-        },
-        {
-          name: "부산시립미술관",
-          address: "부산광역시 해운대구 APEC로 58",
-          imageUrl: "../media/부산시립미술관.jpg",
-          lat: 35.166736,
-          lng: 129.137084,
-        },
-        {
-          name: "해리단길",
-          address: "부산광역시 해운대구 우동",
-          imageUrl: "../media/해리단길.jpg",
-          lat: 35.164835,
-          lng: 129.157635,
-        },
-        {
-          name: "광안리해수욕장",
-          address: "부산광역시 수영구 광안동 193-13",
-          imageUrl: "../media/광안리해수욕장.jpg",
-          lat: 35.153158,
-          lng: 129.118704,
-        }
-      ]
-
       const SeoulDinning = [
         {
           name: "853",
@@ -1094,714 +730,7 @@ function shuffle(array) {
           latitude: 37.57044,
           longitude: 126.9755
         }
-      ]
-
-      const SeoulCafe = [
-        {
-          name: "포비브라이트",
-          address: "서울특별시 종로구 새문안로 76",
-          image: "../media/포비브라이트.jpg",
-          latitude: 37.56974,
-          longitude: 126.9732
-        },
-        {
-          name: "다만프레르",
-          address: "서울특별시 중구 세종대로 136",
-          image: "../media/다만프레르.jpg",
-          latitude: 37.56844,
-          longitude: 126.9781
-        },
-        {
-          name: "컨펙션즈바이포시즌스",
-          address: "서울특별시 종로구 당주동 29번지 1층",
-          image: "../media/컨펙션즈바이포시즌스.jpg",
-          latitude: 37.57066,
-          longitude: 126.9754
-        },
-        {
-          name: "mercat",
-          address: "서울특별시 종로구 세종대로 169",
-          image: "../media/mercat.jpg",
-          latitude: 37.57146,
-          longitude: 126.9763
-        },
-        {
-          name: "오뗄두스",
-          address: "서울특별시 중구 무교동 세종대로 136",
-          image: "../media/오뗄두스.jpg",
-          latitude: 37.56841,
-          longitude: 126.9781
-        },
-        {
-          name: "나무사이로",
-          address: "서울특별시 종로구 사직로8길 21",
-          image: "../media/나무사이로.jpg",
-          latitude: 37.57467,
-          longitude: 126.9709
-        },
-        {
-          name: "내자상회",
-          address: "서울특별시 종로구 사직동 사직로10길 3",
-          image: "../media/내자상회.jpg",
-          latitude: 37.57576,
-          longitude: 126.9705
-        },
-        {
-          name: "디저트플래넷",
-          address: "서울특별시 종로구 종로3길 17 1 층 112,113호",
-          image: "../media/디저트플래넷.jpg",
-          latitude: 37.57106,
-          longitude: 126.9789
-        },
-        {
-          name: "페이퍼마쉐",
-          address: "서울특별시 종로구 무교로 40",
-          image: "../media/페이퍼마쉐.jpg",
-          latitude: 37.56948,
-          longitude: 126.9795
-        },
-        {
-          name: "데시데",
-          address: "서울특별시 종로구 사간동 41 데시데 1층",
-          image: "../media/데시데.jpg",
-          latitude: 37.57779,
-          longitude: 126.9805
-        },
-        {
-          name: "밀곳간",
-          address: "서울특별시 성북구 성북로18길 19",
-          image: "../media/밀곳간.jpg",
-          latitude: 37.5941,
-          longitude: 126.9993
-        },
-        {
-          name: "톤티커피",
-          address: "서울특별시 종로구 가회동 북촌로 6-8",
-          image: "../media/톤티커피.jpg",
-          latitude: 37.5776,
-          longitude: 126.9863
-        },
-        {
-          name: "아키비스트",
-          address: "서울특별시 종로구 효자로13길 52",
-          image: "../media/아키비스트.jpg",
-          latitude: 37.58217,
-          longitude: 126.9727
-        },
-        {
-          name: "스쿠퍼",
-          address: "서울특별시 종로구 통인동 자하문로7길 10",
-          image: "../media/스쿠퍼.jpg",
-          latitude: 37.57835,
-          longitude: 126.9712
-        },
-        {
-          name: "어쩌다산책",
-          address: "서울특별시 종로구 동숭길 101 지하 1층",
-          image: "../media/어쩌다산책.jpg",
-          latitude: 37.58242,
-          longitude: 127.004
-        },
-        {
-          name: "델픽",
-          address: "서울특별시 종로구 계동길 84-3",
-          image: "../media/델픽.jpg",
-          latitude: 37.58121,
-          longitude: 126.987
-        },
-        {
-          name: "스코프",
-          address: "서울특별시 종로구 누하동 필운대로5가길 31",
-          image: "../media/스코프.jpg",
-          latitude: 37.58035,
-          longitude: 126.9674
-        },
-        {
-          name: "뉴질랜드스토리",
-          address: "서울특별시 송파구 석촌호수로 268 1층 109호",
-          image: "../media/뉴질랜드스토리.jpg",
-          latitude: 37.50968,
-          longitude: 127.1057
-        },
-        {
-          name: "프롬헤라스",
-          address: "서울특별시 송파구 올림픽로 300 6층",
-          image: "../media/프롬헤라스.jpg",
-          latitude: 37.51344,
-          longitude: 127.1042
-        },
-        {
-          name: "쟈덩 디베르",
-          address: "서울특별시 송파구 잠실6동",
-          image: "../media/쟈덩디베르.jpg",
-          latitude: 37.51401,
-          longitude: 127.1066
-        },
-        {
-          name: "르페셰미뇽",
-          address: "서울 용산구 녹사평대로40가길 3-3 2층",
-          image: "../media/르페셰미뇽.jpg",
-          latitude: 37.53526,
-          longitude: 126.9877
-        },
-        {
-          name: "재인",
-          address: "서울특별시 용산구 이태원로54길 48 2 층",
-          image: "../media/재인.jpg",
-          latitude: 37.5363,
-          longitude: 127.0013
-        },
-        {
-          name: "코지빌라커피",
-          address: "서울특별시 용산구 이태원제1동 이태원로20길 32",
-          image: "../media/코지빌라커피.jpg",
-          latitude: 37.53286,
-          longitude: 126.9925
-        },
-        {
-          name: "더블톤",
-          address: "서울특별시 중구 창경궁로1길 26",
-          image: "../media/더블톤.jpg",
-          latitude: 37.56269,
-          longitude: 126.9969
-        },
-        {
-          name: "테일러커피",
-          address: "서울특별시 강남구 강남대로160길 31",
-          image: "../media/테일러커피.jpg",
-          latitude: 37.52011,
-          longitude: 127.0212
-        },
-        {
-          name: "마일스톤",
-          address: "서울특별시 강남구 신사동 논현로159길 49",
-          image: "../media/마일스톤.jpg",
-          latitude: 37.52185,
-          longitude: 127.0243
-        },
-        {
-          name: "소나",
-          address: "서울특별시 강남구 신사동 강남대로162길 40",
-          image: "../media/소나.jpg",
-          latitude: 37.52065,
-          longitude: 127.0216
-        },
-        {
-          name: "청수당",
-          address: "서울특별시 강남구 도산대로15길 32-4",
-          image: "../media/청수당.jpg",
-          latitude: 37.5206,
-          longitude: 127.0239
-        },
-        {
-          name: "에뚜왈",
-          address: "서울특별시 강남구 압구정로10길 35 지하 1층",
-          image: "../media/에뚜왈.jpg",
-          latitude: 37.52127,
-          longitude: 127.0222
-        },
-        {
-          name: "노이에아트멍",
-          address: "서울특별시 강남구 신사동 도산대로23길 19",
-          image: "../media/노이에아트멍.jpg",
-          latitude: 37.52021,
-          longitude: 127.0259
-        },
-        {
-          name: "이치서울",
-          address: "서울특별시 강남구 강남대로158길 21 2층",
-          image: "../media/이치서울.jpg",
-          latitude: 37.51923,
-          longitude: 127.0205
-        },
-        {
-          name: "그레이 그리스트밀",
-          address: "서울특별시 강남구 압구정로2길 15",
-          image: "../media/그레이그리스트밀.jpg",
-          latitude: 37.5207,
-          longitude: 127.02
-        },
-        {
-          name: "Immute",
-          address: "서울특별시 강남구 논현로157길 36",
-          image: "../media/Immute.jpg",
-          latitude: 37.52193,
-          longitude: 127.0252
-        },
-        {
-          name: "레이브릭스",
-          address: "서울특별시 강남구 신사동 논현로153길 46",
-          image: "../media/레이브릭스.jpg",
-          latitude: 37.52049,
-          longitude: 127.0243
-        },
-        {
-          name: "듀자미",
-          address: "서울특별시 강남구 도산대로11길 28",
-          image: "../media/듀자미.jpg",
-          latitude: 37.51932,
-          longitude: 127.0226
-        },
-        {
-          name: "C27",
-          address: "서울특별시 강남구 도산대로15길 39",
-          image: "../media/C27.jpg",
-          latitude: 37.52069,
-          longitude: 127.0232
-        },
-        {
-          name: "마망갸또",
-          address: "서울특별시 강남구 압구정로10길 30-12",
-          image: "../media/마망갸또.jpg",
-          latitude: 37.52223,
-          longitude: 127.0215
-        },
-        {
-          name: "식물학",
-          address: "서울특별시 강남구 강남대로154길 33",
-          image: "../media/식물학.jpg",
-          latitude: 37.51838,
-          longitude: 127.0216
-        },
-        {
-          name: "최가회관",
-          address: "서울특별시 광진구 화양동 12-34",
-          image: "../media/최가회관.jpg",
-          latitude: 37.54336,
-          longitude: 127.0706
-        },
-        {
-          name: "인덱스",
-          address: "서울특별시 성동구 성수이로14길 14 1층",
-          image: "../media/인덱스.jpg",
-          latitude: 37.54161,
-          longitude: 127.0568
-        },
-        {
-          name: "꼬메노",
-          address: "서울특별시 광진구 화양동 군자로7길 29",
-          image: "../media/꼬메노.jpg",
-          latitude: 37.54556,
-          longitude: 127.0691
-        },
-        {
-          name: "k375",
-          address: "서울특별시 광진구 화양동 아차산로33길 68",
-          image: "../media/k375.jpg",
-          latitude: 37.54311,
-          longitude: 127.0713
-        },
-        {
-          name: "커피나무",
-          address: "서울특별시 광진구 화양동 동일로22길 117-26",
-          image: "../media/커피나무.jpg",
-          latitude: 37.54166,
-          longitude: 127.071
-        },
-        {
-          name: "재해석",
-          address: "서울특별시 중구 충무로2길 28",
-          image: "../media/재해석.jpg",
-          latitude: 37.56228,
-          longitude: 126.9946
-        },
-        {
-          name: "계단집",
-          address: "서울특별시 중구 회현동 퇴계로6길 35",
-          image: "../media/계단집.jpg",
-          latitude: 37.55691,
-          longitude: 126.9792
-        },
-        {
-          name: "빈스빈스",
-          address: "서울특별시 중구 명동8나길 10",
-          image: "../media/빈스빈스.jpg",
-          latitude: 37.56179,
-          longitude: 126.9842
-        },
-        {
-          name: "포엠",
-          address: "서울특별시 중구 명동2가 명동4길 13",
-          image: "../media/포엠.jpg",
-          latitude: 37.56316,
-          longitude: 126.9837
-        },
-        {
-          name: "원형들",
-          address: "서울특별시 중구 창경궁로1길 38 4층",
-          image: "../media/원형들.jpg",
-          latitude: 37.56248,
-          longitude: 126.9963
-        },
-        {
-          name: "마마스",
-          address: "서울특별시 중구 무교로 16",
-          image: "../media/마마스.jpg",
-          latitude: 37.56728,
-          longitude: 126.9795
-        },
-        {
-          name: "리브레",
-          address: "서울특별시 중구 명동길 74",
-          image: "../media/리브레.jpg",
-          latitude: 37.56398,
-          longitude: 126.987
-        }
-      ]
-  
-      const SeoulActivity = [
-        {
-          name: "경복궁",
-          address: "서울특별시 종로구 사직로 161",
-          image: "../media/경복궁.jpg",
-          latitude: 37.57963,
-          longitude: 126.977
-        },
-        {
-          name: "N서울타워",
-          address: "서울특별시 용산구 남산공원길 105",
-          image: "../media/N서울타워.jpg",
-          latitude: 37.55119,
-          longitude: 126.9883
-        },
-        {
-          name: "북촌한옥마을",
-          address: "서울특별시 종로구 계동길",
-          image: "../media/북촌한옥마을.jpg",
-          latitude: 37.58154,
-          longitude: 126.985
-        },
-        {
-          name: "3D블랙아트",
-          address: "서울특별시 중구 명동8가길 27",
-          image: "../media/3D블랙아트.jpg",
-          latitude: 37.56189,
-          longitude: 126.9865
-        },
-        {
-          name: "명동실탄사격장",
-          address: "서울특별시 중구 충무로2가 11-1 명동사격장 번지 선샤인빌딩 3층",
-          image: "../media/명동실탄사격장.jpg",
-          latitude: 37.5619,
-          longitude: 126.9864
-        },
-        {
-          name: "국립민속박물관",
-          address: "서울특별시 종로구 삼청로 37",
-          image: "../media/국립민속박물관.jpg",
-          latitude: 37.58167,
-          longitude: 126.979
-        },
-        {
-          name: "롯데월드",
-          address: "서울특별시 송파구 올림픽로 240",
-          image: "../media/롯데월드.jpg",
-          latitude: 37.5111,
-          longitude: 127.0982
-        },
-        {
-          name: "코엑스 아쿠아리움",
-          address: "서울특별시 강남구 영동대로 513",
-          image: "../media/코엑스아쿠아리움.jpg",
-          latitude: 37.5131,
-          longitude: 127.0583
-        },
-        {
-          name: "명동난타극장",
-          address: "서울특별시 중구 명동길 26 유네스코회관",
-          image: "../media/명동난타극장.jpg",
-          latitude: 37.56345,
-          longitude: 126.9837
-        },
-        {
-          name: "페인터즈-명보아트홀",
-          address: "서울시 중구 마른내로 47",
-          image: "../media/페인터즈-명보아트홀.jpg",
-          latitude: 37.56469,
-          longitude: 126.9932
-        },
-        {
-          name: "어린이 대공원",
-          address: "서울특별시 광진구 능동로 216",
-          image: "../media/어린이대공원.jpg",
-          latitude: 37.54941,
-          longitude: 127.0818
-        },
-        {
-          name: "올림픽공원",
-          address: "서울특별시 송파구 올림픽로 424",
-          image: "../media/올림픽공원.jpg",
-          latitude: 37.52066,
-          longitude: 127.1215
-        },
-        {
-          name: "잠실야구장",
-          address: "서울특별시 송파구 올림픽로 25",
-          image: "../media/잠실야구장.jpg",
-          latitude: 37.51223,
-          longitude: 127.0721
-        },
-        {
-          name: "별마당도서관",
-          address: "서울특별시 강남구 영동대로 513 스타필드 코엑스몰 B1",
-          image: "../media/별마당도서관.jpg",
-          latitude: 37.50991,
-          longitude: 127.0599
-        },
-        {
-          name: "리얼이스케이프첼린지",
-          address: "서울특별시 마포구 와우산로27길 21 4층",
-          image: "../media/리얼이스케이프첼린지.jpg",
-          latitude: 37.55413,
-          longitude: 126.9271
-        },
-        {
-          name: "스머프매직포레스트홍대",
-          address: "서울특별시 마포구 어울마당로 151-1 2층",
-          image: "../media/스머프매직포레스트홍대.jpg",
-          latitude: 37.55682,
-          longitude: 126.9267
-        },
-        {
-          name: "키자니아",
-          address: "서울특별시 송파구 올림픽로 240",
-          image: "../media/키자니아.jpg",
-          latitude: 37.51087,
-          longitude: 127.0965
-        },
-        {
-          name: "한강요트투어",
-          address: "서울특별시 서초구 잠원동 121-9",
-          image: "../media/한강요트투어.jpg",
-          latitude: 37.51953,
-          longitude: 127.0081
-        },
-        {
-          name: "강북롤러스케이트",
-          address: "서울특별시 강북구 도봉로 342 지하 2층",
-          image: "../media/강북롤러스케이트.jpg",
-          latitude: 37.63789,
-          longitude: 127.0261
-        },
-        {
-          name: "더메이즈",
-          address: "서울특별시 강남구 역삼동 봉은사로18길 76 스타팰리스 4층",
-          image: "../media/더메이즈.jpg",
-          latitude: 37.50176,
-          longitude: 127.0274
-        },
-        {
-          name: "레드버튼강남",
-          address: "서울특별시 강남구 역삼동 814-5 1층",
-          image: "../media/레드버튼강남.jpg",
-          latitude: 37.50211,
-          longitude: 127.0261
-        },
-        {
-          name: "비밀의화원",
-          address: "서울특별시 서초구 유화빌딩 지하 2층",
-          image: "../media/비밀의화원.jpg",
-          latitude: 37.50154,
-          longitude: 127.0254
-        },
-        {
-          name: "성수미술관",
-          address: "서울특별시 강남구 봉은사로4길 20 지하 1층",
-          image: "../media/성수미술관.jpg",
-          latitude: 37.50343,
-          longitude: 127.0263
-        },
-        {
-          name: "하이커그라운드",
-          address: "서울특별시 중구 청계천로 40",
-          image: "../media/하이커그라운드.jpg",
-          latitude: 37.56859,
-          longitude: 126.9819
-        },
-        {
-          name: "블루스퀘어",
-          address: "서울특별시 용산구 한남동 이태원로 294",
-          image: "../media/블루스퀘어.jpg",
-          latitude: 37.54088,
-          longitude: 127.0025
-        },
-        {
-          name: "동대문디자인플라자",
-          address: "서울특별시 중구 을지로 281",
-          image: "../media/동대문디자인플라자.jpg",
-          latitude: 37.5665,
-          longitude: 127.0092
-        },
-        {
-          name: "더 현대 서울",
-          address: "서울특별시 영등포구 여의대로 108",
-          image: "../media/더현대서울.jpg",
-          latitude: 37.52587,
-          longitude: 126.9284
-        },
-        {
-          name: "커먼그라운드",
-          address: "서울특별시 광진구 아차산로 200",
-          image: "../media/커먼그라운드.jpg",
-          latitude: 37.54115,
-          longitude: 127.0659
-        },
-        {
-          name: "언더스탠드에비뉴",
-          address: "서울특별시 성동구 왕십리로 63",
-          image: "../media/언더스탠드에비뉴.jpg",
-          latitude: 37.54355,
-          longitude: 127.0436
-        },
-        {
-          name: "컬러풀뮤지엄",
-          address: "서울특별시 종로구 관훈동 인사동8길 49",
-          image: "../media/컬러풀뮤지엄.jpg",
-          latitude: 37.57459,
-          longitude: 126.9837
-        },
-        {
-          name: "숲속한방랜드",
-          address: "서울특별시 서대문구 봉원사길 75-7",
-          image: "../media/숲속한방랜드.jpg",
-          latitude: 37.57025,
-          longitude: 126.9457
-        },
-        {
-          name: "빛의 시어터",
-          address: "서울특별시 광진구 광장동 워커힐로 177 워커힐호텔 B1층",
-          image: "../media/빛의시어터.jpg",
-          latitude: 37.55535,
-          longitude: 127.1104
-        },
-        {
-          name: "서울스카이",
-          address: "서울특별시 송파구 올림픽로 300",
-          image: "../media/서울스카이.jpg",
-          latitude: 37.51252,
-          longitude: 127.1023
-        },
-        {
-          name: "더숲 초소책방",
-          address: "서울특별시 종로구 인왕산로 172",
-          image: "../media/더숲초소책방.jpg",
-          latitude: 37.5859,
-          longitude: 126.9642
-        },
-        {
-          name: "그라운드 시소 서촌",
-          address: "서울 종로구 자하문로6길 18-8",
-          image: "../media/그라운드시소서촌.jpg",
-          latitude: 37.57776,
-          longitude: 126.9729
-        },
-        {
-          name: "송파 책 박물관",
-          address: "서울특별시 송파구 송파대로37길 77",
-          image: "../media/송파책박물관.jpg",
-          latitude: 37.4989,
-          longitude: 127.1045
-        },
-        {
-          name: "서소문 역사박물관",
-          address: "서울특별시 중구 칠패로 5",
-          image: "../media/서소문역사박물관.jpg",
-          latitude: 37.56056,
-          longitude: 126.9688
-        },
-        {
-          name: "돈의문박물관마을",
-          address: "서울특별시 종로구 송월길 14-3",
-          image: "../media/돈의문박물관마을.jpg",
-          latitude: 37.56879,
-          longitude: 126.9685
-        },
-        {
-          name: "경리단길",
-          address: "서울특별시 용산구 이태원동 210-65",
-          image: "../media/경리단길.jpg",
-          latitude: 37.53844,
-          longitude: 126.9875
-        },
-        {
-          name: "피규어뮤지엄w",
-          address: "서울특별시 강남구 선릉로158길 3",
-          image: "../media/피규어뮤지엄w.jpg",
-          latitude: 37.52576,
-          longitude: 127.0404
-        },
-        {
-          name: "남산골 한옥마을",
-          address: "서울특별시 중구 퇴계로34길 28",
-          image: "../media/남산골한옥마을.jpg",
-          latitude: 37.55931,
-          longitude: 126.9945
-        },
-        {
-          name: "남산 케이블카",
-          address: "서울특별시 중구 소파로 83",
-          image: "../media/남산케이블카.jpg",
-          latitude: 37.55622,
-          longitude: 126.9838
-        },
-        {
-          name: "가온다리",
-          address: "서울특별시 종로구 청운효자동 산4-38",
-          image: "../media/가온다리.jpg",
-          latitude: 37.58645,
-          longitude: 126.965
-        },
-        {
-          name: "디뮤지엄",
-          address: "서울특별시 성동구 왕십리로 83-21",
-          image: "../media/디뮤지엄.jpg",
-          latitude: 37.54384,
-          longitude: 127.0442
-        },
-        {
-          name: "성수아트홀",
-          address: "서울특별시 성동구 뚝섬로1길 43",
-          image: "../media/성수아트홀.jpg",
-          latitude: 37.54541,
-          longitude: 127.047
-        },
-        {
-          name: "hide and seek",
-          address: "서울특별시 종로구 인사동길 44 쌈지길 B2",
-          image: "../media/hideandseek.jpg",
-          latitude: 37.57419,
-          longitude: 126.9848
-        },
-        {
-          name: "아이홉 맥주공방",
-          address: "서울특별시 송파구 삼전동 백제고분로 243",
-          image: "../media/아이홉맥주공방.jpg",
-          latitude: 37.50299,
-          longitude: 127.0937
-        },
-        {
-          name: "도토리 캐리커쳐",
-          address: "서울특별시 마포구 동교로38길 34",
-          image: "../media/도토리캐리커쳐.jpg",
-          latitude: 37.56138,
-          longitude: 126.9255
-        },
-        {
-          name: "심파티",
-          address: "서울특별시 용산구 이태원동 번지 지하 79-44 1층",
-          image: "../media/심파티.jpg",
-          latitude: 37.53246,
-          longitude: 126.9928
-        },
-        {
-          name: "아트쉬프트",
-          address: "서울특별시 중구 충무로 54-17 5층",
-          image: "../media/아트쉬프트.jpg",
-          latitude: 37.56585,
-          longitude: 126.9934
-        }
-      ]
-
+      ];
       const JejuDinning = [
         {
           name: "솔지식당",
@@ -2160,8 +1089,588 @@ function shuffle(array) {
           latitude: 33.249870,
           longitude: 126.561054
         }
-      ]
+      ];
 
+      if (local === "seoul") {
+        shuffle(SeoulDinning);
+        return SeoulDinning;
+      }
+      if (local === "busan") {
+        shuffle(BusanDinning);
+        return BusanDinning;
+      }
+      if (local === "jeju") {
+        shuffle(JejuDinning);
+        return JejuDinning;
+      }
+      return [];
+    }
+
+    function CafeDataList(local) {
+      const BusanCafe = [
+        {
+          name: "고유한",
+          address: "부산광역시 수영구 남천동로108번길 38 골든비치 9",
+          imageUrl: "../media/고유한.jpg",
+          lat: 35.146486,
+          lng: 129.113234,
+        },
+        {
+          name: "다기",
+          address: "부산광역시 수영구 남천동 광안해변로 122",
+          imageUrl: "../media/다기.jpg",
+          lat: 35.145745,
+          lng: 129.115102,
+        },
+        {
+          name: "프라한",
+          address: "부산광역시 수영구 남천동 남천동로108번길 52",
+          imageUrl: "../media/프라한.jpg",
+          lat: 35.145936,
+          lng: 129.114154,
+        },
+        {
+          name: "카페 피크닉",
+          address: "부산광역시 수영구 수영로510번길 40 1 층",
+          imageUrl: "../media/카페 피크닉.jpg",
+          lat: 35.150759,
+          lng: 129.113623,
+        },
+        {
+          name: "아일드블루",
+          address: "부산광역시 수영구 남천동 5-13",
+          imageUrl: "../media/아일드블루.jpg",
+          lat: 35.146085,
+          lng: 129.114482,
+        },
+        {
+          name: "카페 오뜨",
+          address: "부산광역시 수영구 광안해변로 209",
+          imageUrl: "../media/카페 오뜨.jpg",
+          lat: 35.152753,
+          lng: 129.117612,
+        },
+        {
+          name: "일리카페",
+          address: "부산광역시 수영구 광안해변로 189",
+          imageUrl: "../media/일리카페.jpg",
+          lat: 35.151404,
+          lng: 129.116595,
+        },
+        {
+          name: "샌디스",
+          address: "부산광역시 남천바다로 38-1",
+          imageUrl: "../media/샌디스.jpg",
+          lat: 35.148183,
+          lng: 129.114282,
+        },
+        {
+          name: "컵앤컵커피",
+          address: "부산광역시 수영구 광안해변로 177",
+          imageUrl: "../media/컵앤컵커피.jpg",
+          lat: 35.150454,
+          lng: 129.115834,
+        },
+        {
+          name: "브알라 카페",
+          address: "부산광역시 수영구 광안해변로 165",
+          imageUrl: "../media/브알라 카페.jpg",
+          lat: 35.149586,
+          lng: 129.115116,
+        },
+        {
+          name: "Cafe prep",
+          address: "부산광역시 수영구 광안제2동 수영로528번길 38",
+          imageUrl: "../media/Cafe prep.jpg",
+          lat: 35.152172,
+          lng: 129.114903,
+        },
+        {
+          name: "뚜버기 카페",
+          address: "부산광역시 수영구 광안해변로 239",
+          imageUrl: "../media/뚜버기 카페.jpg",
+          lat: 35.154771,
+          lng: 129.120148,
+        },
+        {
+          name: "커피 광안184",
+          address: "부산광역시 수영구 광남로83번길 4",
+          imageUrl: "../media/커피 광안184.jpg",
+          lat: 35.149775,
+          lng: 129.113998,
+        },
+        {
+          name: "워크스루",
+          address: "부산광역시 수영구 수영로522번길 39",
+          imageUrl: "../media/워크스루.jpg",
+          lat: 35.151961,
+          lng: 129.113851,
+        },
+        {
+          name: "별침대",
+          address: "부산광역시 수영구 광안해변로 203",
+          imageUrl: "../media/별침대.jpg",
+          lat: 35.152503,
+          lng: 129.117408,
+        },
+        {
+          name: "아스트릭커피",
+          address: "부산광역시 수영구 광안해변로 179",
+          imageUrl: "../media/아스트릭커피.jpg",
+          lat: 35.150587,
+          lng: 129.115885,
+        },
+        {
+          name: "아덴블랑제리",
+          address: "부산광역시 수영구 광안해변로 161",
+          imageUrl: "../media/아덴블랑제리.jpg",
+          lat: 35.149238,
+          lng: 129.11476,
+        },
+        {
+          name: "카페보배",
+          address: "부산광역시 수영구 민락동 163-26번지",
+          imageUrl: "../media/카페보배.jpg",
+          lat: 35.158407,
+          lng: 129.123133,
+        },
+        {
+          name: "스칸센",
+          address: "부산광역시 수영구 남천동 5-22번지",
+          imageUrl: "../media/스칸센.jpg",
+          lat: 35.146508,
+          lng: 129.113081,
+        },
+        {
+          name: "클러터",
+          address: "부산광역시 수영구 광안로49번길 11",
+          imageUrl: "../media/클러터.jpg",
+          lat: 35.155727,
+          lng: 129.117789,
+        },
+        {
+          name: "Unbent coffee",
+          address: "부산광역시 수영구 민락동 165-20",
+          imageUrl: "../media/Unbent coffee.jpg",
+          lat: 35.157827,
+          lng: 129.120569,
+        },
+        {
+          name: "카페 부아장",
+          address: "부산광역시 수영구 민락본동로27번길 30",
+          imageUrl: "../media/카페 부아장.jpg",
+          lat: 35.158791,
+          lng: 129.127035,
+        },
+        {
+          name: "헤이플롯",
+          address: "부산광역시 수영구 광남로258번길 8",
+          imageUrl: "../media/헤이플롯.jpg",
+          lat: 35.159246,
+          lng: 129.127058,
+        },
+        {
+          name: "카페보배",
+          address: "부산광역시 수영구 민락동 163-26번지",
+          imageUrl: "../media/카페보배.jpg",
+          lat: 35.158405,
+          lng: 129.123132,
+        },
+        {
+          name: "트위스티 베어",
+          address: "부산 수영구 수영로618번길 32-7",
+          imageUrl: "../media/트위스티 베어.jpg",
+          lat: 35.160207,
+          lng: 129.115617,
+        },
+        {
+          name: "차선책",
+          address: "부산광역시 수영구 민락동 광안해변로 237",
+          imageUrl: "../media/차선책.jpg",
+          lat: 35.154714,
+          lng: 129.119959,
+        },
+        {
+          name: "포레스트원_그린",
+          address: "부산광역시 수영구 광안해변로 237",
+          imageUrl: "../media/포레스트원_그린.jpg",
+          lat: 35.154668,
+          lng: 129.119905,
+        },
+        {
+          name: "E-coffee",
+          address: "부산광역시 수영구 민락수변로 141",
+          imageUrl: "../media/E-coffee.jpg",
+          lat: 35.156423,
+          lng: 129.134661,
+        },
+        {
+          name: "더브릿지",
+          address: "부산광역시 해운대구 해운대해변로209번가길 29-1",
+          imageUrl: "../media/더브릿지.jpg",
+          lat: 35.159477,
+          lng: 129.157173,
+        },
+        {
+          name: "오설록",
+          address: "부산광역시 해운대구 우동 1352 1",
+          imageUrl: "../media/오설록.jpg",
+          lat: 35.160913,
+          lng: 129.160873,
+        }
+      ];
+      const SeoulCafe = [
+        {
+          name: "포비브라이트",
+          address: "서울특별시 종로구 새문안로 76",
+          image: "../media/포비브라이트.jpg",
+          latitude: 37.56974,
+          longitude: 126.9732
+        },
+        {
+          name: "다만프레르",
+          address: "서울특별시 중구 세종대로 136",
+          image: "../media/다만프레르.jpg",
+          latitude: 37.56844,
+          longitude: 126.9781
+        },
+        {
+          name: "컨펙션즈바이포시즌스",
+          address: "서울특별시 종로구 당주동 29번지 1층",
+          image: "../media/컨펙션즈바이포시즌스.jpg",
+          latitude: 37.57066,
+          longitude: 126.9754
+        },
+        {
+          name: "mercat",
+          address: "서울특별시 종로구 세종대로 169",
+          image: "../media/mercat.jpg",
+          latitude: 37.57146,
+          longitude: 126.9763
+        },
+        {
+          name: "오뗄두스",
+          address: "서울특별시 중구 무교동 세종대로 136",
+          image: "../media/오뗄두스.jpg",
+          latitude: 37.56841,
+          longitude: 126.9781
+        },
+        {
+          name: "나무사이로",
+          address: "서울특별시 종로구 사직로8길 21",
+          image: "../media/나무사이로.jpg",
+          latitude: 37.57467,
+          longitude: 126.9709
+        },
+        {
+          name: "내자상회",
+          address: "서울특별시 종로구 사직동 사직로10길 3",
+          image: "../media/내자상회.jpg",
+          latitude: 37.57576,
+          longitude: 126.9705
+        },
+        {
+          name: "디저트플래넷",
+          address: "서울특별시 종로구 종로3길 17 1 층 112,113호",
+          image: "../media/디저트플래넷.jpg",
+          latitude: 37.57106,
+          longitude: 126.9789
+        },
+        {
+          name: "페이퍼마쉐",
+          address: "서울특별시 종로구 무교로 40",
+          image: "../media/페이퍼마쉐.jpg",
+          latitude: 37.56948,
+          longitude: 126.9795
+        },
+        {
+          name: "데시데",
+          address: "서울특별시 종로구 사간동 41 데시데 1층",
+          image: "../media/데시데.jpg",
+          latitude: 37.57779,
+          longitude: 126.9805
+        },
+        {
+          name: "밀곳간",
+          address: "서울특별시 성북구 성북로18길 19",
+          image: "../media/밀곳간.jpg",
+          latitude: 37.5941,
+          longitude: 126.9993
+        },
+        {
+          name: "톤티커피",
+          address: "서울특별시 종로구 가회동 북촌로 6-8",
+          image: "../media/톤티커피.jpg",
+          latitude: 37.5776,
+          longitude: 126.9863
+        },
+        {
+          name: "아키비스트",
+          address: "서울특별시 종로구 효자로13길 52",
+          image: "../media/아키비스트.jpg",
+          latitude: 37.58217,
+          longitude: 126.9727
+        },
+        {
+          name: "스쿠퍼",
+          address: "서울특별시 종로구 통인동 자하문로7길 10",
+          image: "../media/스쿠퍼.jpg",
+          latitude: 37.57835,
+          longitude: 126.9712
+        },
+        {
+          name: "어쩌다산책",
+          address: "서울특별시 종로구 동숭길 101 지하 1층",
+          image: "../media/어쩌다산책.jpg",
+          latitude: 37.58242,
+          longitude: 127.004
+        },
+        {
+          name: "델픽",
+          address: "서울특별시 종로구 계동길 84-3",
+          image: "../media/델픽.jpg",
+          latitude: 37.58121,
+          longitude: 126.987
+        },
+        {
+          name: "스코프",
+          address: "서울특별시 종로구 누하동 필운대로5가길 31",
+          image: "../media/스코프.jpg",
+          latitude: 37.58035,
+          longitude: 126.9674
+        },
+        {
+          name: "뉴질랜드스토리",
+          address: "서울특별시 송파구 석촌호수로 268 1층 109호",
+          image: "../media/뉴질랜드스토리.jpg",
+          latitude: 37.50968,
+          longitude: 127.1057
+        },
+        {
+          name: "프롬헤라스",
+          address: "서울특별시 송파구 올림픽로 300 6층",
+          image: "../media/프롬헤라스.jpg",
+          latitude: 37.51344,
+          longitude: 127.1042
+        },
+        {
+          name: "쟈덩 디베르",
+          address: "서울특별시 송파구 잠실6동",
+          image: "../media/쟈덩디베르.jpg",
+          latitude: 37.51401,
+          longitude: 127.1066
+        },
+        {
+          name: "르페셰미뇽",
+          address: "서울 용산구 녹사평대로40가길 3-3 2층",
+          image: "../media/르페셰미뇽.jpg",
+          latitude: 37.53526,
+          longitude: 126.9877
+        },
+        {
+          name: "재인",
+          address: "서울특별시 용산구 이태원로54길 48 2 층",
+          image: "../media/재인.jpg",
+          latitude: 37.5363,
+          longitude: 127.0013
+        },
+        {
+          name: "코지빌라커피",
+          address: "서울특별시 용산구 이태원제1동 이태원로20길 32",
+          image: "../media/코지빌라커피.jpg",
+          latitude: 37.53286,
+          longitude: 126.9925
+        },
+        {
+          name: "더블톤",
+          address: "서울특별시 중구 창경궁로1길 26",
+          image: "../media/더블톤.jpg",
+          latitude: 37.56269,
+          longitude: 126.9969
+        },
+        {
+          name: "테일러커피",
+          address: "서울특별시 강남구 강남대로160길 31",
+          image: "../media/테일러커피.jpg",
+          latitude: 37.52011,
+          longitude: 127.0212
+        },
+        {
+          name: "마일스톤",
+          address: "서울특별시 강남구 신사동 논현로159길 49",
+          image: "../media/마일스톤.jpg",
+          latitude: 37.52185,
+          longitude: 127.0243
+        },
+        {
+          name: "소나",
+          address: "서울특별시 강남구 신사동 강남대로162길 40",
+          image: "../media/소나.jpg",
+          latitude: 37.52065,
+          longitude: 127.0216
+        },
+        {
+          name: "청수당",
+          address: "서울특별시 강남구 도산대로15길 32-4",
+          image: "../media/청수당.jpg",
+          latitude: 37.5206,
+          longitude: 127.0239
+        },
+        {
+          name: "에뚜왈",
+          address: "서울특별시 강남구 압구정로10길 35 지하 1층",
+          image: "../media/에뚜왈.jpg",
+          latitude: 37.52127,
+          longitude: 127.0222
+        },
+        {
+          name: "노이에아트멍",
+          address: "서울특별시 강남구 신사동 도산대로23길 19",
+          image: "../media/노이에아트멍.jpg",
+          latitude: 37.52021,
+          longitude: 127.0259
+        },
+        {
+          name: "이치서울",
+          address: "서울특별시 강남구 강남대로158길 21 2층",
+          image: "../media/이치서울.jpg",
+          latitude: 37.51923,
+          longitude: 127.0205
+        },
+        {
+          name: "그레이 그리스트밀",
+          address: "서울특별시 강남구 압구정로2길 15",
+          image: "../media/그레이그리스트밀.jpg",
+          latitude: 37.5207,
+          longitude: 127.02
+        },
+        {
+          name: "Immute",
+          address: "서울특별시 강남구 논현로157길 36",
+          image: "../media/Immute.jpg",
+          latitude: 37.52193,
+          longitude: 127.0252
+        },
+        {
+          name: "레이브릭스",
+          address: "서울특별시 강남구 신사동 논현로153길 46",
+          image: "../media/레이브릭스.jpg",
+          latitude: 37.52049,
+          longitude: 127.0243
+        },
+        {
+          name: "듀자미",
+          address: "서울특별시 강남구 도산대로11길 28",
+          image: "../media/듀자미.jpg",
+          latitude: 37.51932,
+          longitude: 127.0226
+        },
+        {
+          name: "C27",
+          address: "서울특별시 강남구 도산대로15길 39",
+          image: "../media/C27.jpg",
+          latitude: 37.52069,
+          longitude: 127.0232
+        },
+        {
+          name: "마망갸또",
+          address: "서울특별시 강남구 압구정로10길 30-12",
+          image: "../media/마망갸또.jpg",
+          latitude: 37.52223,
+          longitude: 127.0215
+        },
+        {
+          name: "식물학",
+          address: "서울특별시 강남구 강남대로154길 33",
+          image: "../media/식물학.jpg",
+          latitude: 37.51838,
+          longitude: 127.0216
+        },
+        {
+          name: "최가회관",
+          address: "서울특별시 광진구 화양동 12-34",
+          image: "../media/최가회관.jpg",
+          latitude: 37.54336,
+          longitude: 127.0706
+        },
+        {
+          name: "인덱스",
+          address: "서울특별시 성동구 성수이로14길 14 1층",
+          image: "../media/인덱스.jpg",
+          latitude: 37.54161,
+          longitude: 127.0568
+        },
+        {
+          name: "꼬메노",
+          address: "서울특별시 광진구 화양동 군자로7길 29",
+          image: "../media/꼬메노.jpg",
+          latitude: 37.54556,
+          longitude: 127.0691
+        },
+        {
+          name: "k375",
+          address: "서울특별시 광진구 화양동 아차산로33길 68",
+          image: "../media/k375.jpg",
+          latitude: 37.54311,
+          longitude: 127.0713
+        },
+        {
+          name: "커피나무",
+          address: "서울특별시 광진구 화양동 동일로22길 117-26",
+          image: "../media/커피나무.jpg",
+          latitude: 37.54166,
+          longitude: 127.071
+        },
+        {
+          name: "재해석",
+          address: "서울특별시 중구 충무로2길 28",
+          image: "../media/재해석.jpg",
+          latitude: 37.56228,
+          longitude: 126.9946
+        },
+        {
+          name: "계단집",
+          address: "서울특별시 중구 회현동 퇴계로6길 35",
+          image: "../media/계단집.jpg",
+          latitude: 37.55691,
+          longitude: 126.9792
+        },
+        {
+          name: "빈스빈스",
+          address: "서울특별시 중구 명동8나길 10",
+          image: "../media/빈스빈스.jpg",
+          latitude: 37.56179,
+          longitude: 126.9842
+        },
+        {
+          name: "포엠",
+          address: "서울특별시 중구 명동2가 명동4길 13",
+          image: "../media/포엠.jpg",
+          latitude: 37.56316,
+          longitude: 126.9837
+        },
+        {
+          name: "원형들",
+          address: "서울특별시 중구 창경궁로1길 38 4층",
+          image: "../media/원형들.jpg",
+          latitude: 37.56248,
+          longitude: 126.9963
+        },
+        {
+          name: "마마스",
+          address: "서울특별시 중구 무교로 16",
+          image: "../media/마마스.jpg",
+          latitude: 37.56728,
+          longitude: 126.9795
+        },
+        {
+          name: "리브레",
+          address: "서울특별시 중구 명동길 74",
+          image: "../media/리브레.jpg",
+          latitude: 37.56398,
+          longitude: 126.987
+        }
+      ];
       const JejuCafe = [
         {
           name: "CAFE BARN",
@@ -2513,8 +2022,525 @@ function shuffle(array) {
           latitude: 33.233519,
           longitude: 126310554
         }
-      ]
+      ];
 
+      if (local === "seoul") {
+        shuffle(SeoulCafe);
+        return SeoulCafe;
+      }
+      if (local === "busan") {
+        shuffle(BusanCafe);
+        return BusanCafe;
+      }
+      if (local === "jeju") {
+        shuffle(JejuCafe);
+        return JejuCafe;
+      }
+      return [];
+    }
+
+    function ActivityDataList(local) {
+      const BusanActivity = [
+        {
+          name: "오륙도 스카이워크",
+          address: "부산광역시 남구 오륙도로 137",
+          imageUrl: "../media/오륙도 스카이워크.jpg",
+          lat: 35.10067,
+          lng: 129.124408,
+        },
+        {
+          name: "남천해변공원",
+          address: "부산 수영구 남천2동 148-100",
+          imageUrl: "../media/남천해변공원.jpg",
+          lat: 35.146566,
+          lng: 129.114793,
+        },
+        {
+          name: "APEC나루공원",
+          address: "부산광역시 해운대구 수영강변대로 93",
+          imageUrl: "../media/APEC나루공원.jpg",
+          lat: 35.170646,
+          lng: 129.125442,
+        },
+        {
+          name: "민락수변공원",
+          address: "부산광역시 수영구 광안해변로 361",
+          imageUrl: "../media/민락수변공원.jpg",
+          lat: 35.146195,
+          lng: 129.116304,
+        },
+        {
+          name: "유엔 조각공원",
+          address: "부산광역시 남구 대연제4동 779-1",
+          imageUrl: "../media/유엔 조각공원.jpg",
+          lat: 35.129669,
+          lng: 129.097457,
+        },
+        {
+          name: "대연수목전시원",
+          address: "부산광역시 남구 대연동 713",
+          imageUrl: "../media/대연수목전시원.jpg",
+          lat: 35.125501,
+          lng: 129.09894,
+        },
+        {
+          name: "미포철길",
+          address: "부산광역시 해운대구 중제1동 달맞이길50번길 20",
+          imageUrl: "../media/미포철길.jpg",
+          lat: 35.16002,
+          lng: 129.170831,
+        },
+        {
+          name: "청사포 다릿돌전망대",
+          address: "부산광역시 해운대구 중동 산3-9",
+          imageUrl: "../media/청사포 다릿돌전망대.jpg",
+          lat: 35.164106,
+          lng: 129.19678,
+        },
+        {
+          name: "장산산림욕장",
+          address: "부산광역시 해운대구 좌동 1381",
+          imageUrl: "../media/장산산림욕장.jpg",
+          lat: 35.185135,
+          lng: 129.165142,
+        },
+        {
+          name: "삼주다이아몬드베이",
+          address: "부산광역시 남구 용호동 분포로 101",
+          imageUrl: "../media/삼주다이아몬드베이.jpg",
+          lat: 35.132969,
+          lng: 129.1161,
+        },
+        {
+          name: "동백섬 해안산책로",
+          address: "부산광역시 해운대구 우제1동 707",
+          imageUrl: "../media/동백섬 해안산책로.jpg",
+          lat: 35.153485,
+          lng: 129.153601,
+        },
+        {
+          name: "달맞이언덕",
+          address: "부산광역시 해운대구 중제1동",
+          imageUrl: "../media/달맞이언덕.jpg",
+          lat: 35.155716,
+          lng: 129.178294,
+        },
+        {
+          name: "문탠로드",
+          address: "부산광역시 해운대구 중제2동 달맞이길",
+          imageUrl: "../media/문탠로드.jpg",
+          lat: 35.156372,
+          lng: 129.18028,
+        },
+        {
+          name: "부산 엑스 더 스카이",
+          address: "부산광역시 해운대구 달맞이길 30",
+          imageUrl: "../media/부산 엑스 더 스카이.jpg",
+          lat: 35.159844,
+          lng: 129.169804,
+        },
+        {
+          name: "달맞이동산",
+          address: "부산광역시 해운대구 중동",
+          imageUrl: "../media/달맞이동산.jpg",
+          lat: 35.156974,
+          lng: 129.182217,
+        },
+        {
+          name: "해운대해수욕장",
+          address: "부산광역시 해운대구 중동 1415-27",
+          imageUrl: "../media/해운대해수욕장.jpg",
+          lat: 35.159021,
+          lng: 129.16035,
+        },
+        {
+          name: "F1963",
+          address: "부산광역시 수영구 구락로123번길 20",
+          imageUrl: "../media/F1963.jpg",
+          lat: 35.176698,
+          lng: 129.115319,
+        },
+        {
+          name: "수영팔도시장",
+          address: "부산광역시 수영구 수영로705번길 36",
+          imageUrl: "../media/수영팔도시장.jpg",
+          lat: 35.16878,
+          lng: 129.116916,
+        },
+        {
+          name: "부산시립미술관",
+          address: "부산광역시 해운대구 APEC로 58",
+          imageUrl: "../media/부산시립미술관.jpg",
+          lat: 35.166736,
+          lng: 129.137084,
+        },
+        {
+          name: "해리단길",
+          address: "부산광역시 해운대구 우동",
+          imageUrl: "../media/해리단길.jpg",
+          lat: 35.164835,
+          lng: 129.157635,
+        },
+        {
+          name: "광안리해수욕장",
+          address: "부산광역시 수영구 광안동 193-13",
+          imageUrl: "../media/광안리해수욕장.jpg",
+          lat: 35.153158,
+          lng: 129.118704,
+        }
+      ];
+      const SeoulActivity = [
+        {
+          name: "경복궁",
+          address: "서울특별시 종로구 사직로 161",
+          image: "../media/경복궁.jpg",
+          latitude: 37.57963,
+          longitude: 126.977
+        },
+        {
+          name: "N서울타워",
+          address: "서울특별시 용산구 남산공원길 105",
+          image: "../media/N서울타워.jpg",
+          latitude: 37.55119,
+          longitude: 126.9883
+        },
+        {
+          name: "북촌한옥마을",
+          address: "서울특별시 종로구 계동길",
+          image: "../media/북촌한옥마을.jpg",
+          latitude: 37.58154,
+          longitude: 126.985
+        },
+        {
+          name: "3D블랙아트",
+          address: "서울특별시 중구 명동8가길 27",
+          image: "../media/3D블랙아트.jpg",
+          latitude: 37.56189,
+          longitude: 126.9865
+        },
+        {
+          name: "명동실탄사격장",
+          address: "서울특별시 중구 충무로2가 11-1 명동사격장 번지 선샤인빌딩 3층",
+          image: "../media/명동실탄사격장.jpg",
+          latitude: 37.5619,
+          longitude: 126.9864
+        },
+        {
+          name: "국립민속박물관",
+          address: "서울특별시 종로구 삼청로 37",
+          image: "../media/국립민속박물관.jpg",
+          latitude: 37.58167,
+          longitude: 126.979
+        },
+        {
+          name: "롯데월드",
+          address: "서울특별시 송파구 올림픽로 240",
+          image: "../media/롯데월드.jpg",
+          latitude: 37.5111,
+          longitude: 127.0982
+        },
+        {
+          name: "코엑스 아쿠아리움",
+          address: "서울특별시 강남구 영동대로 513",
+          image: "../media/코엑스아쿠아리움.jpg",
+          latitude: 37.5131,
+          longitude: 127.0583
+        },
+        {
+          name: "명동난타극장",
+          address: "서울특별시 중구 명동길 26 유네스코회관",
+          image: "../media/명동난타극장.jpg",
+          latitude: 37.56345,
+          longitude: 126.9837
+        },
+        {
+          name: "페인터즈-명보아트홀",
+          address: "서울시 중구 마른내로 47",
+          image: "../media/페인터즈-명보아트홀.jpg",
+          latitude: 37.56469,
+          longitude: 126.9932
+        },
+        {
+          name: "어린이 대공원",
+          address: "서울특별시 광진구 능동로 216",
+          image: "../media/어린이대공원.jpg",
+          latitude: 37.54941,
+          longitude: 127.0818
+        },
+        {
+          name: "올림픽공원",
+          address: "서울특별시 송파구 올림픽로 424",
+          image: "../media/올림픽공원.jpg",
+          latitude: 37.52066,
+          longitude: 127.1215
+        },
+        {
+          name: "잠실야구장",
+          address: "서울특별시 송파구 올림픽로 25",
+          image: "../media/잠실야구장.jpg",
+          latitude: 37.51223,
+          longitude: 127.0721
+        },
+        {
+          name: "별마당도서관",
+          address: "서울특별시 강남구 영동대로 513 스타필드 코엑스몰 B1",
+          image: "../media/별마당도서관.jpg",
+          latitude: 37.50991,
+          longitude: 127.0599
+        },
+        {
+          name: "리얼이스케이프첼린지",
+          address: "서울특별시 마포구 와우산로27길 21 4층",
+          image: "../media/리얼이스케이프첼린지.jpg",
+          latitude: 37.55413,
+          longitude: 126.9271
+        },
+        {
+          name: "스머프매직포레스트홍대",
+          address: "서울특별시 마포구 어울마당로 151-1 2층",
+          image: "../media/스머프매직포레스트홍대.jpg",
+          latitude: 37.55682,
+          longitude: 126.9267
+        },
+        {
+          name: "키자니아",
+          address: "서울특별시 송파구 올림픽로 240",
+          image: "../media/키자니아.jpg",
+          latitude: 37.51087,
+          longitude: 127.0965
+        },
+        {
+          name: "한강요트투어",
+          address: "서울특별시 서초구 잠원동 121-9",
+          image: "../media/한강요트투어.jpg",
+          latitude: 37.51953,
+          longitude: 127.0081
+        },
+        {
+          name: "강북롤러스케이트",
+          address: "서울특별시 강북구 도봉로 342 지하 2층",
+          image: "../media/강북롤러스케이트.jpg",
+          latitude: 37.63789,
+          longitude: 127.0261
+        },
+        {
+          name: "더메이즈",
+          address: "서울특별시 강남구 역삼동 봉은사로18길 76 스타팰리스 4층",
+          image: "../media/더메이즈.jpg",
+          latitude: 37.50176,
+          longitude: 127.0274
+        },
+        {
+          name: "레드버튼강남",
+          address: "서울특별시 강남구 역삼동 814-5 1층",
+          image: "../media/레드버튼강남.jpg",
+          latitude: 37.50211,
+          longitude: 127.0261
+        },
+        {
+          name: "비밀의화원",
+          address: "서울특별시 서초구 유화빌딩 지하 2층",
+          image: "../media/비밀의화원.jpg",
+          latitude: 37.50154,
+          longitude: 127.0254
+        },
+        {
+          name: "성수미술관",
+          address: "서울특별시 강남구 봉은사로4길 20 지하 1층",
+          image: "../media/성수미술관.jpg",
+          latitude: 37.50343,
+          longitude: 127.0263
+        },
+        {
+          name: "하이커그라운드",
+          address: "서울특별시 중구 청계천로 40",
+          image: "../media/하이커그라운드.jpg",
+          latitude: 37.56859,
+          longitude: 126.9819
+        },
+        {
+          name: "블루스퀘어",
+          address: "서울특별시 용산구 한남동 이태원로 294",
+          image: "../media/블루스퀘어.jpg",
+          latitude: 37.54088,
+          longitude: 127.0025
+        },
+        {
+          name: "동대문디자인플라자",
+          address: "서울특별시 중구 을지로 281",
+          image: "../media/동대문디자인플라자.jpg",
+          latitude: 37.5665,
+          longitude: 127.0092
+        },
+        {
+          name: "더 현대 서울",
+          address: "서울특별시 영등포구 여의대로 108",
+          image: "../media/더현대서울.jpg",
+          latitude: 37.52587,
+          longitude: 126.9284
+        },
+        {
+          name: "커먼그라운드",
+          address: "서울특별시 광진구 아차산로 200",
+          image: "../media/커먼그라운드.jpg",
+          latitude: 37.54115,
+          longitude: 127.0659
+        },
+        {
+          name: "언더스탠드에비뉴",
+          address: "서울특별시 성동구 왕십리로 63",
+          image: "../media/언더스탠드에비뉴.jpg",
+          latitude: 37.54355,
+          longitude: 127.0436
+        },
+        {
+          name: "컬러풀뮤지엄",
+          address: "서울특별시 종로구 관훈동 인사동8길 49",
+          image: "../media/컬러풀뮤지엄.jpg",
+          latitude: 37.57459,
+          longitude: 126.9837
+        },
+        {
+          name: "숲속한방랜드",
+          address: "서울특별시 서대문구 봉원사길 75-7",
+          image: "../media/숲속한방랜드.jpg",
+          latitude: 37.57025,
+          longitude: 126.9457
+        },
+        {
+          name: "빛의 시어터",
+          address: "서울특별시 광진구 광장동 워커힐로 177 워커힐호텔 B1층",
+          image: "../media/빛의시어터.jpg",
+          latitude: 37.55535,
+          longitude: 127.1104
+        },
+        {
+          name: "서울스카이",
+          address: "서울특별시 송파구 올림픽로 300",
+          image: "../media/서울스카이.jpg",
+          latitude: 37.51252,
+          longitude: 127.1023
+        },
+        {
+          name: "더숲 초소책방",
+          address: "서울특별시 종로구 인왕산로 172",
+          image: "../media/더숲초소책방.jpg",
+          latitude: 37.5859,
+          longitude: 126.9642
+        },
+        {
+          name: "그라운드 시소 서촌",
+          address: "서울 종로구 자하문로6길 18-8",
+          image: "../media/그라운드시소서촌.jpg",
+          latitude: 37.57776,
+          longitude: 126.9729
+        },
+        {
+          name: "송파 책 박물관",
+          address: "서울특별시 송파구 송파대로37길 77",
+          image: "../media/송파책박물관.jpg",
+          latitude: 37.4989,
+          longitude: 127.1045
+        },
+        {
+          name: "서소문 역사박물관",
+          address: "서울특별시 중구 칠패로 5",
+          image: "../media/서소문역사박물관.jpg",
+          latitude: 37.56056,
+          longitude: 126.9688
+        },
+        {
+          name: "돈의문박물관마을",
+          address: "서울특별시 종로구 송월길 14-3",
+          image: "../media/돈의문박물관마을.jpg",
+          latitude: 37.56879,
+          longitude: 126.9685
+        },
+        {
+          name: "경리단길",
+          address: "서울특별시 용산구 이태원동 210-65",
+          image: "../media/경리단길.jpg",
+          latitude: 37.53844,
+          longitude: 126.9875
+        },
+        {
+          name: "피규어뮤지엄w",
+          address: "서울특별시 강남구 선릉로158길 3",
+          image: "../media/피규어뮤지엄w.jpg",
+          latitude: 37.52576,
+          longitude: 127.0404
+        },
+        {
+          name: "남산골 한옥마을",
+          address: "서울특별시 중구 퇴계로34길 28",
+          image: "../media/남산골한옥마을.jpg",
+          latitude: 37.55931,
+          longitude: 126.9945
+        },
+        {
+          name: "남산 케이블카",
+          address: "서울특별시 중구 소파로 83",
+          image: "../media/남산케이블카.jpg",
+          latitude: 37.55622,
+          longitude: 126.9838
+        },
+        {
+          name: "가온다리",
+          address: "서울특별시 종로구 청운효자동 산4-38",
+          image: "../media/가온다리.jpg",
+          latitude: 37.58645,
+          longitude: 126.965
+        },
+        {
+          name: "디뮤지엄",
+          address: "서울특별시 성동구 왕십리로 83-21",
+          image: "../media/디뮤지엄.jpg",
+          latitude: 37.54384,
+          longitude: 127.0442
+        },
+        {
+          name: "성수아트홀",
+          address: "서울특별시 성동구 뚝섬로1길 43",
+          image: "../media/성수아트홀.jpg",
+          latitude: 37.54541,
+          longitude: 127.047
+        },
+        {
+          name: "hide and seek",
+          address: "서울특별시 종로구 인사동길 44 쌈지길 B2",
+          image: "../media/hideandseek.jpg",
+          latitude: 37.57419,
+          longitude: 126.9848
+        },
+        {
+          name: "아이홉 맥주공방",
+          address: "서울특별시 송파구 삼전동 백제고분로 243",
+          image: "../media/아이홉맥주공방.jpg",
+          latitude: 37.50299,
+          longitude: 127.0937
+        },
+        {
+          name: "도토리 캐리커쳐",
+          address: "서울특별시 마포구 동교로38길 34",
+          image: "../media/도토리캐리커쳐.jpg",
+          latitude: 37.56138,
+          longitude: 126.9255
+        },
+        {
+          name: "심파티",
+          address: "서울특별시 용산구 이태원동 번지 지하 79-44 1층",
+          image: "../media/심파티.jpg",
+          latitude: 37.53246,
+          longitude: 126.9928
+        },
+        {
+          name: "아트쉬프트",
+          address: "서울특별시 중구 충무로 54-17 5층",
+          image: "../media/아트쉬프트.jpg",
+          latitude: 37.56585,
+          longitude: 126.9934
+        }
+      ];
       const JejuActivity = [
         {
           name: "두맹이골목",
@@ -2859,34 +2885,25 @@ function shuffle(array) {
           latitude: 33.525434,
           longitude: 126.860186
         }
-      ]
-
-
+      ];
 
       if (local === "seoul") {
-        shuffle(SeoulDinning);
         shuffle(SeoulActivity);
-        shuffle(SeoulCafe);
-        return SeoulDataList;
+        return SeoulActivity;
       }
       if (local === "busan") {
-        shuffle(BusanDinning);
         shuffle(BusanActivity);
-        shuffle(BusanCafe);
-        return BusanDinning;
+        return BusanActivity;
       }
       if (local === "jeju") {
-        shuffle(JejuDinning);
         shuffle(JejuActivity);
-        shuffle(JejuCafe);
-        return BusanDinning;
+        return JejuActivity;
       }
-      return [];
     }
-  
+
     console.log(getDataList(local));
   
-    getDataList(local).forEach((item, index) => {
+    DinningDataList(local).forEach((item, index) => {
       const finalsum = document.createElement("div");
       finalsum.setAttribute("class", "finalsum");
       finalsum.setAttribute("id", `location${index}`);
@@ -2904,6 +2921,45 @@ function shuffle(array) {
       const dinningContent = document.querySelector("#dinning-content");
       dinningContent.appendChild(finalsum);
     });
+
+    CafeDataList(local).forEach((item, index) => {
+      const finalsum = document.createElement("div");
+      finalsum.setAttribute("class", "finalsum");
+      finalsum.setAttribute("id", `location${index}`);
+      finalsum.setAttribute("data-lat", item.lat);
+      finalsum.setAttribute("data-lng", item.lng);
+  
+      finalsum.innerHTML = `
+         <img src = "${item.imageUrl}">
+         <div class ="info">
+           <p class = "name">${item.name}</p>
+           <p class = "adress">${item.address}</p>
+         </div>
+        `;
+  
+      const cafeContent = document.querySelector("#cafe-content");
+      cafeContent.appendChild(finalsum);
+    });
+
+    ActivityDataList(local).forEach((item, index) => {
+      const finalsum = document.createElement("div");
+      finalsum.setAttribute("class", "finalsum");
+      finalsum.setAttribute("id", `location${index}`);
+      finalsum.setAttribute("data-lat", item.lat);
+      finalsum.setAttribute("data-lng", item.lng);
+  
+      finalsum.innerHTML = `
+         <img src = "${item.imageUrl}">
+         <div class ="info">
+           <p class = "name">${item.name}</p>
+           <p class = "adress">${item.address}</p>
+         </div>
+        `;
+  
+      const activityContent = document.querySelector("#activity-content");
+      activityContent.appendChild(finalsum);
+    });
+
   
     var map;
     var center = new kakao.maps.LatLng(35.045277, 128.969343); // 초기 지도 중심 좌표
@@ -2935,6 +2991,8 @@ function shuffle(array) {
         });
       });
     }
-    initializeMap();
+    window.onload = function () {
+      initializeMap();
+    };
   });
   
