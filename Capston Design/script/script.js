@@ -2901,7 +2901,7 @@ function shuffle(array) {
       }
     }
   
-    DinningDataList(local).forEach((item, index) => {
+    DinningDataList(local).slice(0, 7).forEach((item, index) => {
       const finalsum = document.createElement("div");
       finalsum.setAttribute("class", "finalsum");
       finalsum.setAttribute("id", `location${index}`);
@@ -2920,7 +2920,7 @@ function shuffle(array) {
       dinningContent.appendChild(finalsum);
     });
 
-    CafeDataList(local).forEach((item, index) => {
+    CafeDataList(local).slice(0, 7).forEach((item, index) => {
       const finalsum = document.createElement("div");
       finalsum.setAttribute("class", "finalsum");
       finalsum.setAttribute("id", `location${index}`);
@@ -2939,7 +2939,7 @@ function shuffle(array) {
       cafeContent.appendChild(finalsum);
     });
 
-    ActivityDataList(local).forEach((item, index) => {
+    ActivityDataList(local).slice(0, 7).forEach((item, index) => {
       const finalsum = document.createElement("div");
       finalsum.setAttribute("class", "finalsum");
       finalsum.setAttribute("id", `location${index}`);
@@ -2960,7 +2960,7 @@ function shuffle(array) {
 
   
     var map;
-    var center = new kakao.maps.LatLng(35.045277, 128.969343); // 초기 지도 중심 좌표
+    var center = new kakao.maps.LatLng(37.551886, 126.991808);
     var marker = null;
     function initializeMap() {
       var mapContainer = document.getElementById("map");
