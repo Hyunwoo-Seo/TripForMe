@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+}
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+nav {
+    display:flex;
+    width: 15%; 
+    height: 70%; 
+    width: 100%;
+}
+
+section { 
+    width: 70%; 
+    height: 100%;
+    margin-top: -2370px;
+}
+
+.mbti_menu {
+    width: 232px;
+    margin-left: 30px;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.sectioncontainer {
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 70px;
+}
+
+
+#flex {
+    background-image: url("../media/flex.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.back-button {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}

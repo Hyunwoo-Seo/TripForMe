@@ -1,0 +1,102 @@
+body {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-image: url("../media/bg.png");
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 15%; 
+    height: 70%; 
+    float: left;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+section { 
+    width: 70%; 
+    height: 70%; 
+    float: left;
+}
+
+
+
+@font-face {
+    font-family: 'PartialSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.back-button {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-size: 70px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.sectioncontainer {
+    display: block;
+}
+
+.imagebox {
+    width: 200px;
+    height: 150px;
+    margin: 0px 20px;
+    border: 1px black solid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sectioncontainer article {
+    font-family: 'PartialSansKR', sans-serif;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.paragraph a {
+    font-size: 20px;
+}
+
+.mbti_menu {
+    font-family: 'PartialSansKR-Regular', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 250px;
+    position: fixed;
+    top: 100px;
+}
+
+.mbti_menu li {
+    margin-bottom: 20px;
+}
